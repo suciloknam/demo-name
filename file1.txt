@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Kindly confirm word:"
+read -p "username: " username
+#echo "kindly confirm for which alphabet you want to find position:"
+#read -p "position: " positional
+
+length=${#username}
+#echo "The value is $length"
+for ((i=0;i<=${length};i++));do
+	char="${username:i:1}"
+	echo $char
+done
+
+ 
